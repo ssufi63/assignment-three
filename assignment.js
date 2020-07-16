@@ -4,18 +4,17 @@
 
 function feetToMile(feetValue){
         var mile = feetValue / 5280;
+        mile = mile.toFixed(2);
         return mile;
         
 }
 
 
 var mileResult = feetToMile(3000);
-    mileResult = mileResult.toFixed(2);
 console.log('Exact Miles is: ' + mileResult + ' mile!');
 
 
 var mileResult = feetToMile(80000);
-    mileResult = mileResult.toFixed(2);
 console.log('Exact Miles is: ' + mileResult + ' mile!');
 
 
@@ -28,3 +27,7 @@ function woodCalculator(chair, table, bed){
 
 var sum = woodCalculator(20, 5, 3);
 console.log('Total wood need: '+ sum);
+
+
+// brickCalculator
+
