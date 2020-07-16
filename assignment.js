@@ -26,7 +26,7 @@ function woodCalculator(chair, table, bed){
 }
 
 var sum = woodCalculator(20, 5, 3);
-console.log('Total wood need: '+ sum);
+console.log('Total wood need: '+ sum + 'units.');
 
 
 // brickCalculator
