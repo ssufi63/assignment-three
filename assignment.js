@@ -8,9 +8,9 @@ function feetToMile(feetValue){
         mile = mile.toFixed(2);
     }
     else{
-        console.log('Negative Value not acceptable!');
+        mile = 'Negative Value not acceptable!';
     }
-    
+    return mile;
 }
 
 // woodCalculator
@@ -24,7 +24,7 @@ function woodCalculator(chair, table, bed){
 // brickCalculator
 
 
-const uptoTwenty = 150000;
+const tenToTwenty = 150000;
 const aboveTwenty = 270000;
 var totalBricks = 0;
 
@@ -36,7 +36,7 @@ function brickCalculator(storiedBuilding){
     else if(storiedBuilding >10 && storiedBuilding <=20){
         buildingLevel = storiedBuilding - 10;
         bricks1 = buildingLevel * 12000;
-        totalBricks = uptoTwenty + bricks1;
+        totalBricks = tenToTwenty + bricks1;
     } 
     else if(storiedBuilding > 20){
         buildingLevel = storiedBuilding - 20;
@@ -45,7 +45,7 @@ function brickCalculator(storiedBuilding){
 
     }
     else{
-        console.log(`can't be a negative storied building!`)
+        totalBricks = `can't be a negative storied building!`;
     }
     return totalBricks;
 }
